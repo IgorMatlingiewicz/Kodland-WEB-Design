@@ -28,6 +28,11 @@ h2 {
   padding: 10px 100px;
   min-height: 800px;
 }
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 25px;
+  }
+}
 .header__header {
   color: white;
 }

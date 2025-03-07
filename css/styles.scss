@@ -32,6 +32,10 @@ h2 {
     padding: 10px 100px;
     min-height: 800px;
 
+    @media (max-width: 768px) {
+        padding: 10px 25px;
+    }
+
     &__header {
         color: white;
     }
