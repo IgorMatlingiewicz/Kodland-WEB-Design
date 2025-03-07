@@ -1,6 +1,13 @@
 $myGreen: rgb(179, 255, 80);
 $myOragne: #FD7F20;
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 * {
     margin: 0;
 }
@@ -14,6 +21,7 @@ h2 {
     font-size: 1em;
     border: none;
     padding: 15px 50px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .header {
@@ -32,6 +40,7 @@ h2 {
         font-size: 10em;
         margin-bottom: 25px;
         text-transform: uppercase;
+        font-family: 'Chewy';
 
         @media (max-width: 768px) {
             font-size: 4em;
