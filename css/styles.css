@@ -1,1 +1,128 @@
-/*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+button {
+  text-transform: uppercase;
+  font-size: 1em;
+  border: none;
+  padding: 15px 50px;
+}
+
+.header {
+  background-image: url(/src/imgs/background2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 10px 100px;
+  min-height: 800px;
+}
+.header__header {
+  color: white;
+}
+.header__mainHeader {
+  font-size: 10em;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+.header button {
+  background-color: rgb(179, 255, 80);
+  margin-top: 50px;
+}
+
+.nav {
+  margin-bottom: 50px;
+}
+.nav__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 10px;
+}
+.nav__items__logo {
+  font-weight: bold;
+  margin-right: auto;
+  text-transform: uppercase;
+}
+.nav__items__link {
+  margin: 0 75px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.aboutProduct {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+}
+.aboutProduct__header {
+  padding-bottom: 25px;
+}
+.aboutProduct__paragraph {
+  text-align: center;
+  width: 50%;
+}
+
+.ourProducts {
+  background-color: rgb(179, 255, 80);
+  text-align: center;
+  padding: 50px;
+}
+.ourProducts__header {
+  padding: 50px;
+}
+.ourProducts__products {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.ourProducts__products__product {
+  display: flex;
+  flex-direction: column;
+}
+.ourProducts__products__product img {
+  height: 250px;
+}
+.ourProducts__products__product__name {
+  margin: 25px 0;
+}
+.ourProducts__products button {
+  background-color: #FD7F20;
+}
+
+.gameRules {
+  background-image: url("../src/imgs/bg-grid2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  padding: 50px;
+  align-items: center;
+}
+.gameRules__description {
+  padding: 50px;
+}
+.gameRules__description__header {
+  margin-bottom: 25px;
+}
+.gameRules__image {
+  padding: 50px;
+}
+
+.footer {
+  background-color: rgb(36, 36, 36);
+  color: white;
+}
+.footer__links {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}/*# sourceMappingURL=styles.css.map */
