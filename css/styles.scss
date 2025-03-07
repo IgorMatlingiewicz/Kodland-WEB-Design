@@ -5,11 +5,11 @@ $myOragne: #FD7F20;
     margin: 0;
 }
 
-h2{
+h2 {
     font-size: 2em;
 }
 
-button{
+.button {
     text-transform: uppercase;
     font-size: 1em;
     border: none;
@@ -23,15 +23,22 @@ button{
     background-size: cover;
     padding: 10px 100px;
     min-height: 800px;
-    &__header{
+
+    &__header {
         color: white;
     }
-    &__mainHeader{
+
+    &__mainHeader {
         font-size: 10em;
         margin-bottom: 25px;
         text-transform: uppercase;
+
+        @media (max-width: 768px) {
+            font-size: 4em;
+        }
     }
-    button{
+
+    .button {
         background-color: $myGreen;
         margin-top: 50px;
     }
@@ -39,69 +46,123 @@ button{
 
 .nav {
     margin-bottom: 50px;
+
+    &__toggle {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        @media (max-width: 768px) {
+            display: block;
+            font-size: 2em;
+            margin-left: auto;
+        }
+    }
+
     &__items {
         display: flex;
         align-items: center;
         justify-content: space-between;
         list-style: none;
         padding: 10px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+
+            &--hidden {
+                display: none;
+            }
+        }
+
         &__logo {
             font-weight: bold;
             margin-right: auto;
             text-transform: uppercase;
+
+            @media (max-width: 768px) {
+                margin-right: 0;
+            }
         }
-    
-        &__link {
-            margin: 0 75px;
-            text-transform: uppercase;
-            cursor: pointer;
-        }
+    }
+
+    &__link {
+        margin: 0 75px;
+        text-transform: uppercase;
+        cursor: pointer;
     }
 }
 
-.aboutProduct{
+.aboutProduct {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 100px;
-    &__header{
+
+    @media (max-width: 768px) {
+        padding: 25px 0;
+    }
+
+    &__header {
         padding-bottom: 25px;
     }
-    &__paragraph{
+
+    &__paragraph {
         text-align: center;
         width: 50%;
     }
 }
 
-.ourProducts{
+.ourProducts {
     background-color: $myGreen;
     text-align: center;
     padding: 50px;
-    &__header{
+
+    @media (max-width: 768px) {
+        padding: 25px;
+    }
+
+    &__header {
         padding: 50px;
     }
-    &__products{
+
+    &__products {
         list-style: none;
         display: flex;
         justify-content: space-around;
-        &__product{
-            display: flex;
+        padding: 75px 0;
+
+        @media (max-width: 768px) {
             flex-direction: column;
-            img{
-                height: 250px;
-            }
-            &__name{
-                margin: 25px 0;
-            }
+            justify-content: center;
+            align-items: center;
         }
-        button{
-            background-color: $myOragne;
+    }
+
+    &__product {
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 768px) {
+            margin: 20px 0;
         }
+
+        img {
+            height: 250px;
+        }
+
+        &__name {
+            margin: 25px 0;
+        }
+    }
+
+    button {
+        background-color: $myOragne;
     }
 }
 
-.gameRules{
+.gameRules {
     background-image: url('../src/imgs/bg-grid2.png');
     background-repeat: no-repeat;
     background-position: center center;
@@ -109,24 +170,47 @@ button{
     display: flex;
     padding: 50px;
     align-items: center;
-    &__description{
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    &__description {
         padding: 50px;
-        &__header{
+
+        &__header {
             margin-bottom: 25px;
         }
     }
-    &__image{
-        padding: 50px;
+
+    &__image {
+        padding: 0 50px 50px;
+
+        img {
+            max-width: 100%;
+        }
     }
 }
 
-.footer{
+.footer {
     background-color: rgb(36, 36, 36);
     color: white;
-    &__links{
+
+    &__links {
         list-style: none;
         display: flex;
         justify-content: space-around;
         padding: 30px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    &__link {
+        @media (max-width: 768px) {
+            margin-bottom: 15px;
+        }
     }
 }
